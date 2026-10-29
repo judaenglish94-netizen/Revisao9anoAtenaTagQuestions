@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tag Questions - Colégio Atena</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#134b79',
+              light: '#1e5f96',
+              bg: '#0c3556',
+              accent: '#38bdf8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Estilização da barra de rolagem no tom do background */
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 10px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #134b79;
+      border-radius: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #0c3556;
+    }
+  </style>
+</head>
+<body class="bg-brand-bg min-h-screen font-sans text-slate-800 flex flex-col justify-center items-center p-3 sm:p-6 select-none overflow-x-hidden">
+
+  <!-- Container Principal -->
+  <main class="w-full max-w-2xl flex flex-col items-center my-auto">
+
+    <!-- Quadrado Centralizado com a Logo do Colégio Atena -->
+    <div class="bg-white rounded-2xl p-4 shadow-2xl mb-4 sm:mb-6 flex items-center justify-center w-36 h-36 sm:w-44 sm:h-44 border-2 border-brand-dark/20 transition-all duration-300 transform hover:scale-105">
+      <img src="atena.png" alt="Colégio Atena Logo" class="max-w-full max-h-full object-contain">
+    </div>
+
+    <!-- Caixa do Conteúdo Principal -->
+    <div class="w-full bg-white rounded-2xl shadow-2xl border border-slate-100 flex flex-col overflow-hidden">
+      
+      <!-- PÁGINA DE ESTUDO / RESUMO GRAMATICAL -->
+      <section id="study-screen" class="flex flex-col">
+        
+        <!-- Cabeçalho Fixo -->
+        <div class="bg-slate-50 p-4 border-b border-slate-100 text-center">
+          <h1 class="text-xl sm:text-2xl font-bold text-brand-dark">Guia Definitivo: Tag Questions</h1>
+          <p class="text-xs sm:text-sm text-slate-500 mt-0.5">Resumo gramatical completo, regras por tempo verbal e exceções</p>
+        </div>
+
+        <!-- Área de Conteúdo com Scroll -->
+        <div class="h-[54vh] sm:h-[55vh] overflow-y-auto p-4 sm:p-6 space-y-6 text-sm sm:text-base leading-relaxed custom-scrollbar">
+          
+          <div class="p-3 bg-amber-50 border-l-4 border-amber-500 rounded text-xs sm:text-sm text-amber-900 mb-2">
+            💡 <strong>Regra de Ouro:</strong> Se a oração principal for <strong>afirmativa</strong>, a tag será <strong>negativa</strong>. Se a oração for <strong>negativa</strong>, a tag será <strong>afirmativa</strong>. A tag SEMPRE usa o verbo auxiliar/modal correspondente + pronome reto!
+          </div>
+
+          <!-- 1. Regra Geral e Estrutura -->
+          <article class="space-y-2 border-b border-slate-100 pb-5">
+            <h2 class="text-lg font-bold text-brand-dark flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-brand-dark"></span> 1. Estrutura Básica
+            </h2>
+            <p>Tag Questions são pequenas perguntas no final de uma frase usadas para confirmar uma informação.</p>
+            <div class="bg-slate-50 p-3 rounded-lg space-y-2 border border-slate-200 text-xs sm:text-sm">
+              <p>• <strong>Frase (+), Tag (-):</strong> You speak English, <strong class="text-brand-dark font-bold">don't you?</strong></p>
+              <p>• <strong>Frase (-), Tag (+):</strong> You don't speak French, <strong class="text-brand-dark font-bold">do you?</strong></p>
+              <p class="text-slate-500 italic">Nota: A tag negativa usa sempre a forma contraída (don't, isn't, haven't, etc.).</p>
+            </div>
+          </article>
+
+          <!-- 2. Tag Questions nos Tempos Verbais -->
+          <article class="space-y-2 border-b border-slate-100 pb-5">
+            <h2 class="text-lg font-bold text-brand-dark flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-brand-dark"></span> 2. Aplicação em Todos os Tempos Verbais
+            </h2>
+            
+            <div class="bg-slate-50 p-3 rounded-lg space-y-3 border border-slate-200 text-xs sm:text-sm">
+              
+              <!-- Simple Present -->
+              <div>
+                <p class="font-bold text-brand-dark">A) Simple Present (Auxiliares: do / does / to be)</p>
+                <p>• She lives in London, <strong class="text-brand-dark">doesn't she?</strong></p>
+                <p>• They don't play chess, <strong class="text-brand-dark">do they?</strong></p>
+                <p>• He is a teacher, <strong class="text-brand-dark">isn't he?</strong></p>
+              </div>
+
+              <!-- Present Continuous -->
+              <div>
+                <p class="font-bold text-brand-dark">B) Present Continuous (Auxiliares: am / is / are)</p>
+                <p>• You are studying now, <strong class="text-brand-dark">aren't you?</strong></p>
+                <p>• She isn't sleeping, <strong class="text-brand-dark">is she?</strong></p>
+              </div>
+
+              <!-- Simple Past -->
+              <div>
+                <p class="font-bold text-brand-dark">C) Simple Past (Auxiliares: did / was / were)</p>
+                <p>• You traveled last week, <strong class="text-brand-dark">didn't you?</strong></p>
+                <p>• He didn't call you, <strong class="text-brand-dark">did he?</strong></p>
+                <p>• They were happy, <strong class="text-brand-dark">weren't they?</strong></p>
+              </div>
+
+              <!-- Past Continuous -->
+              <div>
+                <p class="font-bold text-brand-dark">D) Past Continuous (Auxiliares: was / were)</p>
+                <p>• It was raining yesterday, <strong class="text-brand-dark">wasn't it?</strong></p>
+                <p>• We weren't sleeping at 10, <strong class="text-brand-dark">were we?</strong></p>
+              </div>
+
+              <!-- Simple Future -->
+              <div>
+                <p class="font-bold text-brand-dark">E) Simple Future (Will & Be Going To)</p>
+                <p>• They will arrive tomorrow, <strong class="text-brand-dark">won't they?</strong></p>
+                <p>• She isn't going to buy that house, <strong class="text-brand-dark">is she?</strong></p>
+              </div>
+
+              <!-- Present Perfect -->
+              <div>
+                <p class="font-bold text-brand-dark">F) Present Perfect (Auxiliares: have / has)</p>
+                <p>• You have finished the test, <strong class="text-brand-dark">haven't you?</strong></p>
+                <p>• He hasn't seen this movie, <strong class="text-brand-dark">has he?</strong></p>
+              </div>
+
+              <!-- Past Perfect -->
+              <div>
+                <p class="font-bold text-brand-dark">G) Past Perfect (Auxiliar: had)</p>
+                <p>• The train had already left, <strong class="text-brand-dark">hadn't it?</strong></p>
+                <p>• They hadn't eaten before, <strong class="text-brand-dark">had they?</strong></p>
+              </div>
+
+              <!-- Modal Verbs -->
+              <div>
+                <p class="font-bold text-brand-dark">H) Verbos Modais (can, could, should, must)</p>
+                <p>• She can drive a truck, <strong class="text-brand-dark">can't she?</strong></p>
+                <p>• You shouldn't stay up late, <strong class="text-brand-dark">should you?</strong></p>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- 3. Exceções e Casos Especiais -->
+          <article class="space-y-2">
+            <h2 class="text-lg font-bold text-brand-dark flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-brand-dark"></span> 3. Exceções Importantes (Atenção Máxima!)
+            </h2>
+            <div class="bg-amber-100/70 p-3 rounded-lg space-y-2.5 border border-amber-200 text-amber-950 text-xs sm:text-sm">
+              
+              <div>
+                <p>🚨 <strong>1. Primeira pessoa "I am":</strong></p>
+                <p>• I am right, <strong class="underline font-bold">aren't I?</strong> (Não existe <em>"amn't I"</em> em inglês padrão).</p>
+                <p>• <em>Porém na negativa:</em> I am not late, <strong class="underline font-bold">am I?</strong></p>
+              </div>
+
+              <div>
+                <p>🚨 <strong>2. Convite com "Let's":</strong></p>
+                <p>• Let's go to the beach, <strong class="underline font-bold">shall we?</strong></p>
+              </div>
+
+              <div>
+                <p>🚨 <strong>3. Imperativos (Ordens/Pedidos):</strong></p>
+                <p>• Close the door, <strong class="underline font-bold">will you?</strong> / <strong class="underline font-bold">won't you?</strong></p>
+                <p>• Don't make noise, <strong class="underline font-bold">will you?</strong></p>
+              </div>
+
+              <div>
+                <p>🚨 <strong>4. Palavras com sentido negativo (never, nobody, nothing, seldom, hardly):</strong></p>
+                <p>A frase já é considerada negativa, portanto a tag será <strong>AFIRMATIVA</strong>!</p>
+                <p>• You <strong class="underline font-bold">never</strong> eat meat, <strong class="underline font-bold">do you?</strong></p>
+                <p>• <strong class="underline font-bold">Nothing</strong> happened, <strong class="underline font-bold">did it?</strong></p>
+              </div>
+
+              <div>
+                <p>🚨 <strong>5. Substituição de Sujeitos por Pronomes:</strong></p>
+                <p>• <strong>Nobody / Somebody / Everyone / Everybody</strong> $\rightarrow$ Pronome <strong class="underline font-bold">THEY</strong> na tag.</p>
+                <p><em>Ex:</em> Everyone knows him, <strong class="underline font-bold">don't they?</strong></p>
+                <p>• <strong>Nothing / Something / Everything / This / That</strong> $\rightarrow$ Pronome <strong class="underline font-bold">IT</strong> na tag.</p>
+                <p><em>Ex:</em> This is your book, <strong class="underline font-bold">isn't it?</strong></p>
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Rodapé / Botão de Ação -->
+        <div class="p-4 border-t border-slate-100 bg-slate-50 flex justify-center">
+          <button id="start-btn" onclick="startQuiz()" class="w-full sm:w-auto px-8 py-3 bg-brand-dark hover:bg-brand-light text-white font-bold rounded-xl shadow-md transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 text-base">
+            Start Quiz 🚀
+          </button>
+        </div>
+
+      </section>
+
+      <!-- PÁGINA DO QUIZ -->
+      <section id="quiz-screen" class="hidden flex flex-col">
+        
+        <!-- Barra de Progresso & Acesso ao Menu de Questões -->
+        <div class="bg-slate-50 p-3 sm:p-4 border-b border-slate-100 space-y-2">
+          <div class="flex justify-between items-center text-xs sm:text-sm font-semibold text-slate-600">
+            <span id="topic-badge" class="bg-brand-dark/10 text-brand-dark px-2.5 py-1 rounded-full text-xs font-bold truncate max-w-[200px] sm:max-w-none">
+              Tópico
+            </span>
+            <div class="flex items-center gap-2">
+              <button onclick="toggleNavModal()" class="text-xs bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold px-2.5 py-1 rounded-lg transition-colors flex items-center gap-1">
+                📋 Navegador
+              </button>
+              <span id="question-counter" class="text-brand-dark font-bold">1 / 30</span>
+            </div>
+          </div>
+          <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
+            <div id="progress-bar" class="bg-brand-dark h-full transition-all duration-300 w-0"></div>
+          </div>
+        </div>
+
+        <!-- Área da Questão com Scroll Fixo -->
+        <div class="h-[54vh] sm:h-[55vh] overflow-y-auto p-4 sm:p-6 flex flex-col justify-between custom-scrollbar">
+          
+          <div class="space-y-4">
+            <h3 id="question-text" class="text-base sm:text-lg font-bold text-slate-800 leading-snug">
+              Pergunta aqui...
+            </h3>
+
+            <!-- Opções -->
+            <div id="options-container" class="space-y-2.5 pt-1">
+              <!-- Renderizado via JS -->
+            </div>
+          </div>
+
+          <!-- Caixa de Feedback da Resposta -->
+          <div id="feedback-box" class="hidden mt-4 p-3.5 rounded-xl text-xs sm:text-sm leading-relaxed border transition-all duration-200">
+            <!-- Renderizado via JS -->
+          </div>
+
+        </div>
+
+        <!-- Barra de Botões -->
+        <div class="p-3 sm:p-4 border-t border-slate-100 bg-slate-50 flex justify-between items-center gap-2">
+          <button id="prev-btn" onclick="prevQuestion()" class="px-4 py-2.5 bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold rounded-lg text-xs sm:text-sm transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
+            Previous
+          </button>
+          
+          <button id="check-btn" onclick="checkAnswer()" class="px-5 py-2.5 bg-brand-dark hover:bg-brand-light text-white font-bold rounded-lg text-xs sm:text-sm shadow-md transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
+            Check
+          </button>
+          
+          <button id="next-btn" onclick="nextQuestion()" class="px-4 py-2.5 bg-brand-dark hover:bg-brand-light text-white font-bold rounded-lg text-xs sm:text-sm shadow-md transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
+            Next
+          </button>
+        </div>
+
+      </section>
+
+      <!-- PÁGINA DO RELATÓRIO FINAL -->
+      <section id="report-screen" class="hidden flex flex-col">
+        
+        <div class="bg-slate-50 p-4 border-b border-slate-100 text-center">
+          <h2 class="text-xl sm:text-2xl font-bold text-brand-dark">Quiz Concluído! 🎉</h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-0.5">Confira o seu desempenho em Tag Questions</p>
+        </div>
+
+        <div class="h-[54vh] sm:h-[55vh] overflow-y-auto p-4 sm:p-6 space-y-5 custom-scrollbar">
+          
+          <!-- Cards de Métricas -->
+          <div class="grid grid-cols-2 gap-3">
+            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-xl text-center">
+              <span class="block text-2xl sm:text-3xl font-extrabold text-emerald-600" id="score-correct">0</span>
+              <span class="text-xs sm:text-sm font-semibold text-emerald-800">Acertos (<span id="percent-correct">0%</span>)</span>
+            </div>
+            <div class="bg-rose-50 border border-rose-200 p-4 rounded-xl text-center">
+              <span class="block text-2xl sm:text-3xl font-extrabold text-rose-600" id="score-incorrect">0</span>
+              <span class="text-xs sm:text-sm font-semibold text-rose-800">Erros (<span id="percent-incorrect">0%</span>)</span>
+            </div>
+          </div>
+
+          <!-- Recomendação de Revisão -->
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 space-y-3">
+            <h3 class="font-bold text-brand-dark text-sm sm:text-base border-b pb-2">
+              📌 Recomendações de Estudo
+            </h3>
+            <div id="feedback-topics-list" class="space-y-2 text-xs sm:text-sm">
+              <!-- Preenchido via JS -->
+            </div>
+          </div>
+
+        </div>
+
+        <div class="p-4 border-t border-slate-100 bg-slate-50 flex justify-center">
+          <button onclick="restartQuiz()" class="w-full sm:w-auto px-8 py-3 bg-brand-dark hover:bg-brand-light text-white font-bold rounded-xl shadow-md transition-all duration-200 text-sm sm:text-base">
+            Refazer Quiz / Revisar 🔄
+          </button>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- MODAL NAVEGADOR DE QUESTÕES -->
+  <div id="nav-modal" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-3">
+    <div class="bg-white w-full max-w-lg rounded-2xl shadow-2xl flex flex-col overflow-hidden max-h-[85vh]">
+      <div class="p-4 bg-brand-dark text-white flex justify-between items-center">
+        <h3 class="font-bold text-sm sm:text-base">📋 Navegador de Questões</h3>
+        <button onclick="toggleNavModal()" class="text-white hover:text-slate-200 text-xl font-bold px-2">&times;</button>
+      </div>
+      <div id="nav-grid-container" class="p-4 overflow-y-auto space-y-4 text-xs sm:text-sm custom-scrollbar">
+        <!-- Renderizado dinamicamente via JS -->
+      </div>
+      <div class="p-3 bg-slate-50 border-t text-center">
+        <button onclick="toggleNavModal()" class="px-5 py-2 bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold rounded-lg text-xs">
+          Fechar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- BANCO DE DADOS (30 QUESTÕES DE TAG QUESTIONS) & LÓGICA EM JAVASCRIPT -->
+  <script>
+    const rawQuestions = [
+      // --- BLOCO 1: REGRAS GERAIS E SIMPLE PRESENT / PAST (10 QUESTÕES) ---
+      {
+        topic: "Regras Gerais / Simple Present",
+        question: "Complete: 'She plays the acoustic guitar very well, _____?'",
+        options: [
+          { text: "doesn't she?", correct: true },
+          { text: "don't she?", correct: false },
+          { text: "isn't she?", correct: false },
+          { text: "does she?", correct: false },
+          { text: "didn't she?", correct: false }
+        ],
+        explanation: "Frase afirmativa no Simple Present com 'She'. O auxiliar de 3ª pessoa é 'does', então a tag negativa é 'doesn't she?'."
+      },
+      {
+        topic: "Regras Gerais / Simple Present",
+        question: "Complete: 'They don't live in Sergipe anymore, _____?'",
+        options: [
+          { text: "do they?", correct: true },
+          { text: "don't they?", correct: false },
+          { text: "are they?", correct: false },
+          { text: "did they?", correct: false },
+          { text: "aren't they?", correct: false }
+        ],
+        explanation: "A oração principal é negativa (don't live), portanto a tag deve ser afirmativa usando o auxiliar 'do': 'do they?'."
+      },
+      {
+        topic: "Regras Gerais / Simple Present",
+        question: "Complete: 'You are an English teacher, _____?'",
+        options: [
+          { text: "aren't you?", correct: true },
+          { text: "don't you?", correct: false },
+          { text: "are you?", correct: false },
+          { text: "isn't you?", correct: false },
+          { text: "do you?", correct: false }
+        ],
+        explanation: "Quando o verbo To Be é o verbo principal, ele próprio é usado na tag. Frase afirmativa $\\rightarrow$ tag negativa: 'aren't you?'."
+      },
+      {
+        topic: "Regras Gerais / Simple Past",
+        question: "Complete: 'He bought a new guitar last week, _____?'",
+        options: [
+          { text: "didn't he?", correct: true },
+          { text: "doesn't he?", correct: false },
+          { text: "did he?", correct: false },
+          { text: "wasn't he?", correct: false },
+          { text: "hasn't he?", correct: false }
+        ],
+        explanation: "O verbo 'bought' está no Simple Past (afirmativo). O auxiliar do passado é 'did', logo a tag negativa é 'didn't he?'."
+      },
+      {
+        topic: "Regras Gerais / Simple Past",
+        question: "Complete: 'The students didn't fail the exam, _____?'",
+        options: [
+          { text: "did they?", correct: true },
+          { text: "didn't they?", correct: false },
+          { text: "do they?", correct: false },
+          { text: "were they?", correct: false },
+          { text: "don't they?", correct: false }
+        ],
+        explanation: "'The students' é substituído pelo pronome 'they'. Como a frase é negativa (didn't), a tag é afirmativa: 'did they?'."
+      },
+      {
+        topic: "Regras Gerais / Simple Past",
+        question: "Complete: 'Mary was at school yesterday, _____?'",
+        options: [
+          { text: "wasn't she?", correct: true },
+          { text: "didn't she?", correct: false },
+          { text: "was she?", correct: false },
+          { text: "isn't she?", correct: false },
+          { text: "weren't she?", correct: false }
+        ],
+        explanation: "O verbo To Be no passado é 'was'. Frase afirmativa para Mary (she) $\\rightarrow$ tag negativa: 'wasn't she?'."
+      },
+      {
+        topic: "Regras Gerais / Simple Present",
+        question: "Complete: 'We don't have class on Sundays, _____?'",
+        options: [
+          { text: "do we?", correct: true },
+          { text: "don't we?", correct: false },
+          { text: "have we?", correct: false },
+          { text: "are we?", correct: false },
+          { text: "haven't we?", correct: false }
+        ],
+        explanation: "Oração negativa no Simple Present com 'We'. A tag utiliza o auxiliar afirmativo 'do we?'."
+      },
+      {
+        topic: "Regras Gerais / Simple Present",
+        question: "Complete: 'Mr. Davis works at Colégio Atena, _____?'",
+        options: [
+          { text: "doesn't he?", correct: true },
+          { text: "don't he?", correct: false },
+          { text: "isn't he?", correct: false },
+          { text: "does he?", correct: false },
+          { text: "didn't he?", correct: false }
+        ],
+        explanation: "Mr. Davis (he) em oração afirmativa do Simple Present exige a tag negativa 'doesn't he?'."
+      },
+      {
+        topic: "Regras Gerais / Simple Past",
+        question: "Complete: 'You weren't sleeping when I called, _____?'",
+        options: [
+          { text: "were you?", correct: true },
+          { text: "was you?", correct: false },
+          { text: "weren't you?", correct: false },
+          { text: "did you?", correct: false },
+          { text: "didn't you?", correct: false }
+        ],
+        explanation: "Past Continuous na negativa ('weren't sleeping'). A tag recupera o auxiliar 'were' em formato afirmativo: 'were you?'."
+      },
+      {
+        topic: "Regras Gerais / Simple Present",
+        question: "Complete: 'Your parents like Italian food, _____?'",
+        options: [
+          { text: "don't they?", correct: true },
+          { text: "doesn't they?", correct: false },
+          { text: "aren't they?", correct: false },
+          { text: "do they?", correct: false },
+          { text: "didn't they?", correct: false }
+        ],
+        explanation: "'Your parents' equivale a 'they' (plural). Oração afirmativa no presente usa o auxiliar 'don't they?'."
+      },
+
+      // --- BLOCO 2: OUTROS TEMPOS VERBAIS E MODAIS (10 QUESTÕES) ---
+      {
+        topic: "Tempos Continuos & Perfeitos",
+        question: "Complete: 'She is writing a test right now, _____?'",
+        options: [
+          { text: "isn't she?", correct: true },
+          { text: "is she?", correct: false },
+          { text: "doesn't she?", correct: false },
+          { text: "aren't she?", correct: false },
+          { text: "hasn't she?", correct: false }
+        ],
+        explanation: "Present Continuous afirmativo ('is writing'). A tag usa o próprio auxiliar To Be na negativa: 'isn't she?'."
+      },
+      {
+        topic: "Tempos Continuos & Perfeitos",
+        question: "Complete: 'They will travel to Maceió next month, _____?'",
+        options: [
+          { text: "won't they?", correct: true },
+          { text: "will they?", correct: false },
+          { text: "don't they?", correct: false },
+          { text: "aren't they?", correct: false },
+          { text: "shan't they?", correct: false }
+        ],
+        explanation: "Futuro simples com 'will'. A negação contraída de 'will' é 'won't', formando 'won't they?'."
+      },
+      {
+        topic: "Tempos Continuos & Perfeitos",
+        question: "Complete: 'He is going to buy a new car, _____?'",
+        options: [
+          { text: "isn't he?", correct: true },
+          { text: "won't he?", correct: false },
+          { text: "is he?", correct: false },
+          { text: "doesn't he?", correct: false },
+          { text: "hasn't he?", correct: false }
+        ],
+        explanation: "Na estrutura 'Be going to', o auxiliar é o verbo To Be ('is'). Frase afirmativa $\\rightarrow$ 'isn't he?'."
+      },
+      {
+        topic: "Tempos Continuos & Perfeitos",
+        question: "Complete: 'You have visited Canada twice, _____?'",
+        options: [
+          { text: "haven't you?", correct: true },
+          { text: "don't you?", correct: false },
+          { text: "have you?", correct: false },
+          { text: "didn't you?", correct: false },
+          { text: "hadn't you?", correct: false }
+        ],
+        explanation: "Present Perfect afirmativo ('have visited'). A tag utiliza o auxiliar 'have' na negativa: 'haven't you?'."
+      },
+      {
+        topic: "Tempos Continuos & Perfeitos",
+        question: "Complete: 'She hasn't finished her project yet, _____?'",
+        options: [
+          { text: "has she?", correct: true },
+          { text: "hasn't she?", correct: false },
+          { text: "does she?", correct: false },
+          { text: "is she?", correct: false },
+          { text: "did she?", correct: false }
+        ],
+        explanation: "Present Perfect negativo ('hasn't finished'). A tag pede o auxiliar afirmativo: 'has she?'."
+      },
+      {
+        topic: "Tempos Continuos & Perfeitos",
+        question: "Complete: 'The train had already left when we arrived, _____?'",
+        options: [
+          { text: "hadn't it?", correct: true },
+          { text: "didn't it?", correct: false },
+          { text: "hasn't it?", correct: false },
+          { text: "wasn't it?", correct: false },
+          { text: "had it?", correct: false }
+        ],
+        explanation: "Past Perfect afirmativo com o auxiliar 'had'. 'The train' vira 'it', resultando em 'hadn't it?'."
+      },
+      {
+        topic: "Verbos Modais",
+        question: "Complete: 'You can play the bass guitar, _____?'",
+        options: [
+          { text: "can't you?", correct: true },
+          { text: "don't you?", correct: false },
+          { text: "can you?", correct: false },
+          { text: "couldn't you?", correct: false },
+          { text: "aren't you?", correct: false }
+        ],
+        explanation: "Verbos modais atuam como seus próprios auxiliares. 'Can' afirmativo torna-se 'can't you?' na tag."
+      },
+      {
+        topic: "Verbos Modais",
+        question: "Complete: 'We shouldn't drive so fast, _____?'",
+        options: [
+          { text: "should we?", correct: true },
+          { text: "shouldn't we?", correct: false },
+          { text: "do we?", correct: false },
+          { text: "must we?", correct: false },
+          { text: "can we?", correct: false }
+        ],
+        explanation: "Modal 'should' na oração negativa ('shouldn't'). A tag usa o modal afirmativo 'should we?'."
+      },
+      {
+        topic: "Verbos Modais",
+        question: "Complete: 'She could speak English when she was young, _____?'",
+        options: [
+          { text: "couldn't she?", correct: true },
+          { text: "can't she?", correct: false },
+          { text: "didn't she?", correct: false },
+          { text: "wasn't she?", correct: false },
+          { text: "could she?", correct: false }
+        ],
+        explanation: "Modal 'could' afirmativo. A tag correspondente na negativa é 'couldn't she?'."
+      },
+      {
+        topic: "Verbos Modais",
+        question: "Complete: 'Students must wear their school uniform, _____?'",
+        options: [
+          { text: "mustn't they?", correct: true },
+          { text: "don't they?", correct: false },
+          { text: "must they?", correct: false },
+          { text: "aren't they?", correct: false },
+          { text: "needn't they?", correct: false }
+        ],
+        explanation: "Modal 'must' afirmativo com sujeito no plural ('Students' $\\rightarrow$ 'they'). Tag: 'mustn't they?'."
+      },
+
+      // --- BLOCO 3: EXCEÇÕES E CASOS ESPECIAIS (10 QUESTÕES) ---
+      {
+        topic: "Exceções / Casos Especiais",
+        question: "Complete: 'I am right about this exercise, _____?'",
+        options: [
+          { text: "aren't I?", correct: true },
+          { text: "amn't I?", correct: false },
+          { text: "am not I?", correct: false },
+          { text: "don't I?", correct: false },
+          { text: "isn't I?", correct: false }
+        ],
+        explanation: "EXCEÇÃO: A tag negativa para 'I am' no inglês padrão é sempre 'aren't I?' (pois 'amn't' não existe)."
+      },
+      {
+        topic: "Exceções / Casos Especiais",
+        question: "Complete: 'I am not late for class, _____?'",
+        options: [
+          { text: "am I?", correct: true },
+          { text: "aren't I?", correct: false },
+          { text: "do I?", correct: false },
+          { text: "is I?", correct: false },
+          { text: "am not I?", correct: false }
+        ],
+        explanation: "Na forma negativa 'I am not', a regra volta ao normal: usa-se a tag afirmativa 'am I?'."
+      },
+      {
+        topic: "Exceções / Casos Especiais",
+        question: "Complete: 'Let's take a break now, _____?'",
+        options: [
+          { text: "shall we?", correct: true },
+          { text: "don't we?", correct: false },
+          { text: "will we?", correct: false },
+          { text: "aren't we?", correct: false },
+          { text: "let we?", correct: false }
+        ],
+        explanation: "EXCEÇÃO: Frases que começam com 'Let's' (sugestão/convite) usam obrigatoriamente a tag 'shall we?'."
+      },
+      {
+        topic: "Exceções / Casos Especiais",
+        question: "Complete: 'Open the window for me, _____?'",
+        options: [
+          { text: "will you?", correct: true },
+          { text: "don't you?", correct: false },
+          { text: "do you?", correct: false },
+          { text: "shall you?", correct: false },
+          { text: "aren't you?", correct: false }
+        ],
+        explanation: "EXCEÇÃO: Para frases no Imperativo (pedidos ou ordens), a tag padrão utilizada é 'will you?'."
+      },
+      {
+        topic: "Exceções / Casos Especiais",
+        question: "Complete: 'Don't make any noise, _____?'",
+        options: [
+          { text: "will you?", correct: true },
+          { text: "do you?", correct: false },
+          { text: "don't you?", correct: false },
+          { text: "won't you?", correct: false },
+          { text: "shall you?", correct: false }
+        ],
+        explanation: "EXCEÇÃO: Imperativos negativos ('Don't...') também utilizam a tag 'will you?'."
+      },
+      {
+        topic: "Exceções / Casos Especiais",
+        question: "Complete: 'She never drinks coffee in the evening, _____?'",
+        options: [
+          { text: "does she?", correct: true },
+          { text: "doesn't she?", correct: false },
+          { text: "is she?", correct: false },
+          { text: "isn't she?", correct: false },
+          { text: "don't she?", correct: false }
+        ],
+        explanation: "A palavra 'never' confere sentido negativo à frase. Portanto, a tag deve ser AFIRMATIVA ('does she?')."
+      },
+      {
+        topic: "Exceções / Casos Especiais",
+        question: "Complete: 'Nobody called while I was out, _____?'",
+        options: [
+          { text: "did they?", correct: true },
+          { text: "didn't they?", correct: false },
+          { text: "did it?", correct: false },
+          { text: "didn't it?", correct: false },
+          { text: "does nobody?", correct: false }
+        ],
+        explanation: "'Nobody' torna a frase negativa (exige tag afirmativa) e é substituído pelo pronome 'they' na tag ('did they?')."
+      },
+      {
+        topic: "Exceções / Casos Especiais",
+        question: "Complete: 'Nothing was stolen during the party, _____?'",
+        options: [
+          { text: "was it?", correct: true },
+          { text: "wasn't it?", correct: false },
+          { text: "was they?", correct: false },
+          { text: "weren't they?", correct: false },
+          { text: "did it?", correct: false }
+        ],
+        explanation: "'Nothing' é negativo (tag afirmativa) e refere-se a coisas, sendo substituído pelo pronome 'it' ('was it?')."
+      },
+      {
+        topic: "Exceções / Casos Especiais",
+        question: "Complete: 'Everyone passed the English exam, _____?'",
+        options: [
+          { text: "didn't they?", correct: true },
+          { text: "did they?", correct: false },
+          { text: "doesn't it?", correct: false },
+          { text: "don't they?", correct: false },
+          { text: "didn't he?", correct: false }
+        ],
+        explanation: "'Everyone' exige o pronome 'they' na tag. Como a oração está no passado afirmativo ('passed'), a tag é 'didn't they?'."
+      },
+      {
+        topic: "Exceções / Casos Especiais",
+        question: "Complete: 'This is your favorite bicycle, _____?'",
+        options: [
+          { text: "isn't it?", correct: true },
+          { text: "is it?", correct: false },
+          { text: "isn't this?", correct: false },
+          { text: "doesn't it?", correct: false },
+          { text: "aren't they?", correct: false }
+        ],
+        explanation: "Os demonstrativos 'This' e 'That' são substituídos por 'it' na tag question ('isn't it?')."
+      }
+    ];
+
+    // Estado da Aplicação
+    let questions = [];
+    let currentIndex = 0;
+    let userAnswers = {};
+
+    function shuffleArray(array) {
+      const arr = [...array];
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    function initQuizData() {
+      questions = rawQuestions.map(q => {
+        const shuffledOptions = shuffleArray(q.options);
+        return {
+          ...q,
+          options: shuffledOptions
+        };
+      });
+      userAnswers = {};
+      currentIndex = 0;
+    }
+
+    function startQuiz() {
+      initQuizData();
+      document.getElementById('study-screen').classList.add('hidden');
+      document.getElementById('report-screen').classList.add('hidden');
+      document.getElementById('quiz-screen').classList.remove('hidden');
+      renderQuestion();
+    }
+
+    function renderQuestion() {
+      const q = questions[currentIndex];
+      
+      document.getElementById('topic-badge').textContent = q.topic;
+      document.getElementById('question-counter').textContent = `${currentIndex + 1} / ${questions.length}`;
+      const progressPercent = ((currentIndex + 1) / questions.length) * 100;
+      document.getElementById('progress-bar').style.width = `${progressPercent}%`;
+
+      document.getElementById('question-text').textContent = `${currentIndex + 1}. ${q.question}`;
+
+      const optionsContainer = document.getElementById('options-container');
+      optionsContainer.innerHTML = '';
+
+      const state = userAnswers[currentIndex] || { selectedOptionIndex: null, isChecked: false };
+
+      q.options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.className = `w-full text-left p-3.5 rounded-xl border text-xs sm:text-sm font-medium transition-all duration-200 flex items-center justify-between gap-2 `;
+
+        if (state.isChecked) {
+          if (opt.correct) {
+            btn.className += 'bg-emerald-50 border-emerald-500 text-emerald-900 font-bold';
+          } else if (state.selectedOptionIndex === idx) {
+            btn.className += 'bg-rose-50 border-rose-500 text-rose-900 font-bold';
+          } else {
+            btn.className += 'bg-slate-50 border-slate-200 text-slate-400 opacity-60';
+          }
+        } else {
+          if (state.selectedOptionIndex === idx) {
+            btn.className += 'bg-brand-dark/10 border-brand-dark text-brand-dark font-bold shadow-sm';
+          } else {
+            btn.className += 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50 hover:border-slate-300';
+          }
+        }
+
+        btn.onclick = () => selectOption(idx);
+        btn.disabled = state.isChecked;
+
+        const letter = String.fromCharCode(65 + idx);
+        btn.innerHTML = `
+          <span><strong class="mr-2 text-brand-dark">${letter})</strong> ${escapeHtml(opt.text)}</span>
+          ${state.isChecked && opt.correct ? '<span>✅</span>' : ''}
+          ${state.isChecked && state.selectedOptionIndex === idx && !opt.correct ? '<span>❌</span>' : ''}
+        `;
+
+        optionsContainer.appendChild(btn);
+      });
+
+      const feedbackBox = document.getElementById('feedback-box');
+      if (state.isChecked) {
+        feedbackBox.classList.remove('hidden');
+        const selectedOpt = q.options[state.selectedOptionIndex];
+        
+        if (selectedOpt.correct) {
+          feedbackBox.className = "mt-4 p-3.5 rounded-xl text-xs sm:text-sm leading-relaxed bg-emerald-50 border border-emerald-300 text-emerald-950";
+          feedbackBox.innerHTML = `<strong>🎉 Resposta Correta!</strong><br>${q.explanation}`;
+        } else {
+          feedbackBox.className = "mt-4 p-3.5 rounded-xl text-xs sm:text-sm leading-relaxed bg-rose-50 border border-rose-300 text-rose-950";
+          feedbackBox.innerHTML = `<strong>❌ Resposta Incorreta.</strong><br>${q.explanation}`;
+        }
+      } else {
+        feedbackBox.classList.add('hidden');
+      }
+
+      document.getElementById('prev-btn').disabled = (currentIndex === 0);
+      document.getElementById('check-btn').disabled = (state.selectedOptionIndex === null || state.isChecked);
+      
+      const nextBtn = document.getElementById('next-btn');
+      if (currentIndex === questions.length - 1) {
+        nextBtn.textContent = 'Finish Quiz 🏁';
+      } else {
+        nextBtn.textContent = 'Next';
+      }
+    }
+
+    function selectOption(index) {
+      if (!userAnswers[currentIndex]) {
+        userAnswers[currentIndex] = { selectedOptionIndex: null, isChecked: false };
+      }
+      userAnswers[currentIndex].selectedOptionIndex = index;
+      renderQuestion();
+    }
+
+    function checkAnswer() {
+      if (!userAnswers[currentIndex] || userAnswers[currentIndex].selectedOptionIndex === null) return;
+      userAnswers[currentIndex].isChecked = true;
+      renderQuestion();
+    }
+
+    function nextQuestion() {
+      if (currentIndex < questions.length - 1) {
+        currentIndex++;
+        renderQuestion();
+      } else {
+        finishQuiz();
+      }
+    }
+
+    function prevQuestion() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        renderQuestion();
+      }
+    }
+
+    function toggleNavModal() {
+      const modal = document.getElementById('nav-modal');
+      if (modal.classList.contains('hidden')) {
+        buildNavGrid();
+        modal.classList.remove('hidden');
+      } else {
+        modal.classList.add('hidden');
+      }
+    }
+
+    function buildNavGrid() {
+      const container = document.getElementById('nav-grid-container');
+      container.innerHTML = '';
+
+      const topics = {};
+      questions.forEach((q, idx) => {
+        if (!topics[q.topic]) topics[q.topic] = [];
+        topics[q.topic].push(idx);
+      });
+
+      for (const [topicName, qIndexes] of Object.entries(topics)) {
+        const topicBox = document.createElement('div');
+        topicBox.className = 'space-y-2';
+
+        const topicTitle = document.createElement('h4');
+        topicTitle.className = 'font-bold text-slate-700 text-xs sm:text-sm border-b pb-1';
+        topicTitle.textContent = topicName;
+        topicBox.appendChild(topicTitle);
+
+        const grid = document.createElement('div');
+        grid.className = 'grid grid-cols-5 gap-2';
+
+        qIndexes.forEach(qIdx => {
+          const btn = document.createElement('button');
+          const ans = userAnswers[qIdx];
+          
+          let btnStyle = "bg-slate-100 border-slate-300 text-slate-700 hover:bg-slate-200";
+          if (qIdx === currentIndex) {
+            btnStyle = "bg-brand-dark text-white font-bold ring-2 ring-brand-accent";
+          } else if (ans && ans.isChecked) {
+            const isCorrect = questions[qIdx].options[ans.selectedOptionIndex].correct;
+            btnStyle = isCorrect ? "bg-emerald-500 text-white font-bold" : "bg-rose-500 text-white font-bold";
+          } else if (ans && ans.selectedOptionIndex !== null) {
+            btnStyle = "bg-amber-400 text-amber-950 font-bold";
+          }
+
+          btn.className = `p-2 rounded-lg text-xs border text-center transition-all ${btnStyle}`;
+          btn.textContent = `Q${qIdx + 1}`;
+          btn.onclick = () => {
+            currentIndex = qIdx;
+            renderQuestion();
+            toggleNavModal();
+          };
+          grid.appendChild(btn);
+        });
+
+        topicBox.appendChild(grid);
+        container.appendChild(topicBox);
+      }
+    }
+
+    function finishQuiz() {
+      document.getElementById('quiz-screen').classList.add('hidden');
+      document.getElementById('report-screen').classList.remove('hidden');
+
+      let correctCount = 0;
+      let incorrectCount = 0;
+      const topicErrors = {};
+
+      questions.forEach((q, idx) => {
+        const state = userAnswers[idx];
+        if (state && state.selectedOptionIndex !== null) {
+          const isCorrect = q.options[state.selectedOptionIndex].correct;
+          if (isCorrect) {
+            correctCount++;
+          } else {
+            incorrectCount++;
+            topicErrors[q.topic] = (topicErrors[q.topic] || 0) + 1;
+          }
+        } else {
+          incorrectCount++;
+          topicErrors[q.topic] = (topicErrors[q.topic] || 0) + 1;
+        }
+      });
+
+      const total = questions.length;
+      const percentCorrect = Math.round((correctCount / total) * 100);
+      const percentIncorrect = Math.round((incorrectCount / total) * 100);
+
+      document.getElementById('score-correct').textContent = correctCount;
+      document.getElementById('percent-correct').textContent = `${percentCorrect}%`;
+      document.getElementById('score-incorrect').textContent = incorrectCount;
+      document.getElementById('percent-incorrect').textContent = `${percentIncorrect}%`;
+
+      const feedbackList = document.getElementById('feedback-topics-list');
+      feedbackList.innerHTML = '';
+
+      if (incorrectCount === 0) {
+        feedbackList.innerHTML = `
+          <div class="p-3 bg-emerald-50 text-emerald-800 rounded-lg font-medium border border-emerald-200">
+            🌟 <strong>Perfeito!</strong> Você acertou todas as 30 questões de Tag Questions! Domínio absoluto da matéria.
+          </div>
+        `;
+      } else {
+        let html = `<p class="text-slate-600 mb-2">Atenção especial aos seguintes pontos recomendados para revisão:</p><ul class="space-y-1.5">`;
+        
+        for (const [topic, errorCount] of Object.entries(topicErrors)) {
+          html += `
+            <li class="flex items-center justify-between p-2.5 bg-white border rounded-lg text-slate-800 font-medium">
+              <span>📌 <strong>${topic}</strong></span>
+              <span class="text-xs bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full font-bold">${errorCount} erro(s)</span>
+            </li>
+          `;
+        }
+        html += `</ul>`;
+        feedbackList.innerHTML = html;
+      }
+    }
+
+    function restartQuiz() {
+      document.getElementById('report-screen').classList.add('hidden');
+      document.getElementById('study-screen').classList.remove('hidden');
+    }
+
+    function escapeHtml(text) {
+      return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+  </script>
+</body>
+</html>
